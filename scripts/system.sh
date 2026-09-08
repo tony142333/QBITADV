@@ -6,6 +6,7 @@ echo " [STEP 1] Installing Base Packages & Docker"
 echo "=========================================="
 apt-get update -y
 apt-get install -y unzip curl bc zip python3 ca-certificates docker.io docker-compose-v2
+sudo apt-get update -y && sudo apt-get install -y tcpdump
 usermod -aG docker ubuntu
 
 echo "=========================================="

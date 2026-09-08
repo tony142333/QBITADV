@@ -20,10 +20,14 @@ data "cloudinit_config" "server_config" {
   part {
     content_type = "text/x-shellscript"
     content = templatefile("${path.module}/scripts/vpn.sh", {
+      vpn_client          = var.vpn_client
       pia_user            = var.pia_user
       pia_password        = var.pia_password
-      cyberghost_user     = var.cyberghost_user
-      cyberghost_password = var.cyberghost_password
+      cyberghost_user     = var.pia_user
+      cyberghost_password = var.pia_password
+      protonvpn_user      = var.protonvpn_user
+      protonvpn_password  = var.protonvpn_password
+      proton_private_key  = var.proton_private_key
     })
   }
 

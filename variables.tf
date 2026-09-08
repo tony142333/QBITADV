@@ -50,17 +50,28 @@ variable "qbittorrent_password" {
   sensitive   = true
 }
 
-variable "cyberghost_user" {
+variable "protonvpn_user" {
   description = "username/email to cyberghost"
   type        = string
   sensitive   = true
 
 }
 
-variable "cyberghost_password" {
+variable "protonvpn_password" {
   description = "password to cyberghost"
   type        = string
   sensitive   = true
 
 }
+variable "vpn_client" {
+  description = "vpn using"
+  type        = string
+  sensitive   = true
+}
 
+
+variable "proton_private_key" {
+  description = "pivate key"
+  type        = string
+  sensitive   = true
+}

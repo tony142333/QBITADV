@@ -21,7 +21,7 @@ services:
       - VPN_TYPE=openvpn
       - OPENVPN_USER=${pia_user}
       - OPENVPN_PASSWORD=${pia_password}
-      - SERVER_REGIONS=CA Ontario,CA Montreal,CA Vancouver
+      - SERVER_COUNTRIES=Canada
       - PORT_FORWARDING=true
     ports:
       - "8090:8090"
