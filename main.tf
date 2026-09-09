@@ -22,8 +22,6 @@ data "cloudinit_config" "server_config" {
     content = templatefile("${path.module}/scripts/vpn.sh", {
       pia_user            = var.pia_user
       pia_password        = var.pia_password
-      cyberghost_user     = var.cyberghost_user
-      cyberghost_password = var.cyberghost_password
     })
   }
 

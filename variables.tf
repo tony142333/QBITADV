@@ -50,17 +50,4 @@ variable "qbittorrent_password" {
   sensitive   = true
 }
 
-variable "cyberghost_user" {
-  description = "username/email to cyberghost"
-  type        = string
-  sensitive   = true
-
-}
-
-variable "cyberghost_password" {
-  description = "password to cyberghost"
-  type        = string
-  sensitive   = true
-
-}
 

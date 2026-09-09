@@ -39,7 +39,7 @@ Downloads\\TempPath=/downloads/temp
 WebUI\\Address=*
 WebUI\\Port=8090
 WebUI\\Username=${qbittorrent_user}
-WebUI\\Password_PBKDF2="$PBKDF2_HASH"
+WebUI\\Password_PBKDF2="${qbittorrent_password}"
 WebUI\\CSRFProtection=false
 WebUI\\HostHeaderValidation=false
 CONF_EOF
