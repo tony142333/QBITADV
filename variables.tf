@@ -50,4 +50,9 @@ variable "qbittorrent_password" {
   sensitive   = true
 }
 
+variable "nordvpn_wireguard_private_key" {
+  description = "nord vpn key"
+  type        = string
+  sensitive   = true
 
+}

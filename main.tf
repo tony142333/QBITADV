@@ -20,8 +20,7 @@ data "cloudinit_config" "server_config" {
   part {
     content_type = "text/x-shellscript"
     content = templatefile("${path.module}/scripts/vpn.sh", {
-      pia_user            = var.pia_user
-      pia_password        = var.pia_password
+      nordvpn_wireguard_private_key = var.nordvpn_wireguard_private_key
     })
   }
 
