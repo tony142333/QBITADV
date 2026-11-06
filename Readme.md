@@ -12,3 +12,7 @@ sudo docker exec gluetun_vpn wget -qO- https://api.ipify.org && echo ""
 
 $token="e9f2abfb34660c4894283cfafa5c5c36a69a4e5579bb360b8833b40e2ac6e297"
 Invoke-RestMethod -Uri "https://api.nordvpn.com/v1/users/serv..." -Headers @{Authorization=("Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("token:$token")))}
+
+
+- SERVER_COUNTRIES=United States
+  - SERVER_CITIES=New York,Secaucus
